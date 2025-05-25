@@ -97,8 +97,7 @@ html, body {
     color: white;
     font-family: system-ui;
 		display: none;
-    /* Убери ограничивающие top/left/transform */
-    /* Не задавай общих значений расположения */
+
 }
 
 
@@ -746,10 +745,10 @@ hr.slide{
 	display: flex;
 }
 .table table{
-	  border-collapse: collapse; /* чтобы не было двойных границ */
+	  border-collapse: collapse; 
   border: 1px solid #000000;
   border-radius: 10px;
-  overflow: hidden; /* обрезает углы внутри */
+  overflow: hidden; 
   width: 100%;
 	border-radius: 15px;
 	color: #00223e;;
@@ -767,28 +766,28 @@ table {
   font-family: 'Cascadia Code';
 }
 
-/* Верхняя левая ячейка */
+
 thead tr:first-child th:first-child {
   border-top-left-radius: 10px;
 }
 
-/* Верхняя правая ячейка */
+
 thead tr:first-child th:last-child {
   border-top-right-radius: 10px;
 }
 
-/* Нижняя левая ячейка */
+
 tbody tr:last-child td:first-child {
   border-bottom-left-radius: 10px;
 }
 
-/* Нижняя правая ячейка */
+
 tbody tr:last-child td:last-child {
   border-bottom-right-radius: 10px;
 }
 
 th, td {
-  border: 1px solid #ddd; /* вот тут и горизонталь, и вертикаль */
+  border: 1px solid #ddd;
   padding: 10px;
   text-align: center;
   background-color:  rgb(237, 249, 255);
@@ -798,8 +797,8 @@ td a{
 	font-size: 20;
 	color: #00223e;
 	text-decoration: none;
-	transform: scale(1); /* начальный масштаб */
-  transition: transform 0.3s ease-in-out; /* вот он */
+	transform: scale(1);
+  transition: transform 0.3s ease-in-out;
 }
 td a:hover{
 	transform: scale(1.1);
